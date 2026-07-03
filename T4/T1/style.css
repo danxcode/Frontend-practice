@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    background-color: #5eefec;
+}
+#parrot{
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+#parrot1{
+    border-radius: 50%;
+    border: 5px solid black;
+    width: 15%;
+    height: auto;
+    transition: width 2s;
+}
+#parrot1:hover{
+    width: 25%;
+    height: auto;
+    transition: width 2s;
+}
+#hr{
+    width: 50%;
+    height: 3px;
+    background-color: blue;
+}
+#Click {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 5px 12px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 0 15px 0 15px;
+    transition: all 1s;
+}
+
+#Click:hover {
+    background-color: blue;
+    border-radius: 15px 0 15px 0;
+}
+#marquee{
+    border: 5px dotted green;
+    background-color: white;
+}
+.imag{
+    background-color: white;
+}
