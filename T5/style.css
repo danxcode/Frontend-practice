@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+}
+.marquee{
+    border: 10px solid red;
+    width: 1280px;
+    min-height: 400px;
+}
+#mountain-and-cloud{
+    background-image: url("MultiBackgrounds/d.png") , url("MultiBackgrounds/b.png") , url("MultiBackgrounds/c.png");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center bottom;
+    width: 1280px;
+    min-height: 860px;
+}
