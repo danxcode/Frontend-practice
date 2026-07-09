@@ -1,0 +1,19 @@
+#secend-Ul{
+    list-style-type: square;
+}
+#secend-ol{
+    list-style-type: lower-roman;
+}
+#Markup{
+    font-family: Verdana, Geneva, sans-serif;
+    color: blue;
+}
+#hyper{
+    color: red;
+}
+a:link, a:visited{
+    color: purple;
+}
+#yahoo{
+    font-style: italic;
+}
