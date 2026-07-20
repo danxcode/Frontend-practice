@@ -170,6 +170,12 @@ a:visited, a:link {
 .figure-image img , .figure-image1 img{
     border: 3px solid #999999;
     filter: grayscale(100%);
+    transition: 0.5s;
+}
+.figure-image img:hover , .figure-image1 img:hover{
+    border: 3px solid #00CC65;
+    filter: grayscale(0%);
+    transition: 0.5s;
 }
 .figure-image{
     display: inline-block;
@@ -218,7 +224,7 @@ a:visited, a:link {
     box-shadow: 3px 3px black;
 }
 .table-wrap {
-    max-width: 1210px;
+    max-width: 1100px;
     margin: 0 auto;
     position: relative;
 }
