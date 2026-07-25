@@ -7,15 +7,17 @@ body {
     padding: 0;
     margin: 0;
 }
+
 #wrapper::after {
-     content: "";
-     position: absolute;
-     top: 0;
-     right: -8px;
-     width: 5px;
-     height: 100%;
-     background-color: black;
- }
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -8px;
+    width: 5px;
+    height: 100%;
+    background-color: black;
+}
+
 #wrapper {
     border-right: 3px solid #00CC65;
     border-left: 4px solid #00CC65;
@@ -23,6 +25,7 @@ body {
     margin: 0 auto;
     position: relative;
 }
+
 .italic-link {
     font-style: italic;
 }
@@ -33,10 +36,12 @@ body {
     margin-top: 0;
     padding-top: 30px;
 }
-#hr-marqoee{
+
+#hr-marqoee {
     background-color: #00CC65;
     height: 5px;
 }
+
 #wrapper marquee {
     padding-left: 5px;
     padding-bottom: 10px;
@@ -51,10 +56,11 @@ body {
     color: #00CC65;
 }
 
-#list-none li:nth-child(4) a{
+#list-none li:nth-child(4) a {
     border-bottom: 2px solid #00CC65;
     padding-bottom: 2px;
 }
+
 #list-none li {
     display: inline-block;
     margin-right: 50px;
@@ -65,7 +71,8 @@ a:visited, a:link {
     color: black;
     display: inline-block;
 }
-#background-green{
+
+#background-green {
     height: 400px;
 
     background: #f8fff9 repeating-linear-gradient(
@@ -78,31 +85,39 @@ a:visited, a:link {
     text-align: center;
     border-bottom: 5px solid black;
 }
-#background-green h2:nth-child(1){
+
+#background-green h2:nth-child(1) {
     margin-top: 90px;
     text-shadow: 2px 2px #00CC65;
 }
-#background-green h2{
+
+#background-green h2 {
     font-size: 30px;
 }
-#background-green h2,h4,h5{
+
+#background-green h2, h4, h5 {
     display: inline-block;
     margin: 10px 0;
 }
-#color-green-h2-selection{
+
+#color-green-h2-selection {
     color: #00CC65;
     text-shadow: 2px 2px black;
 }
-#background-green h4{
+
+#background-green h4 {
     color: #6D6D6D;
 }
-#background-green h4 span:nth-child(1){
+
+#background-green h4 span:nth-child(1) {
     color: black;
 }
-#background-green h4 span:nth-child(2){
+
+#background-green h4 span:nth-child(2) {
     font-style: italic;
 }
-#background-green a:link , #background-green a:visited {
+
+#background-green a:link, #background-green a:visited {
     background-color: #00CC65;
     color: white;
     padding: 10px 20px;
@@ -112,15 +127,18 @@ a:visited, a:link {
     font-style: italic;
     transition: 0.5s;
 }
-#background-green a:hover{
+
+#background-green a:hover {
     box-shadow: none;
     transition: 0.5s;
 }
-.title{
+
+.title {
     text-align: center;
     margin: 45px;
 }
-.title span{
+
+.title span {
     display: inline-block;
     width: 60px;
     height: 6px;
@@ -128,27 +146,33 @@ a:visited, a:link {
     box-shadow: 3px 3px black;
     margin: 0 15px;
 }
-.title h2{
+
+.title h2 {
     display: inline-block;
     margin: 0;
 }
-.figure-caption{
+
+.figure-caption {
     padding-left: 20px;
     display: inline-block;
     margin: 0;
 }
-.figure-caption h5 span:nth-child(1){
+
+.figure-caption h5 span:nth-child(1) {
     font-size: 22px;
 }
-.figure-caption span:nth-child(4) , span:nth-child(6) , span:nth-child(3){
+
+.figure-caption span:nth-child(4), span:nth-child(6), span:nth-child(3) {
     text-decoration: underline;
     text-decoration-color: #00CC65;
 }
-.figure-caption h5:nth-child(3){
+
+.figure-caption h5:nth-child(3) {
     text-decoration: underline;
     text-decoration-color: #00CC65;
 }
-.figure-caption a:link , #figure-caption a:visited{;
+
+.figure-caption a:link, #figure-caption a:visited {;
     background-color: #00CC65;
     color: white;
     padding: 10px 20px;
@@ -160,24 +184,29 @@ a:visited, a:link {
     font-style: italic;
     transition: 0.5s;
 }
-.figure-caption a:hover{
+
+.figure-caption a:hover {
     box-shadow: none;
     transition: 0.5s;
 }
-.figure-caption h5 del{
+
+.figure-caption h5 del {
     color: #9A9A9A;
 }
-.figure-image img , .figure-image1 img{
+
+.figure-image img, .figure-image1 img {
     border: 3px solid #999999;
     filter: grayscale(100%);
     transition: 0.5s;
 }
-.figure-image img:hover , .figure-image1 img:hover{
+
+.figure-image img:hover, .figure-image1 img:hover {
     border: 3px solid #00CC65;
     filter: grayscale(0%);
     transition: 0.5s;
 }
-.figure-image{
+
+.figure-image {
     display: inline-block;
     margin: 15px;
     vertical-align: top;
@@ -188,11 +217,13 @@ a:visited, a:link {
     transition: 0.5s;
     position: relative;
 }
-.figure-image:hover , .figure-image1:hover{
+
+.figure-image:hover, .figure-image1:hover {
     box-shadow: none;
     transition: 1s;
 }
-.figure-image1{
+
+.figure-image1 {
     display: inline-block;
     margin: 15px;
     vertical-align: top;
@@ -203,11 +234,13 @@ a:visited, a:link {
     transition: 0.5s;
     position: relative;
 }
-#products{
+
+#products {
     width: 1150px;
     margin: 0 auto;
 }
-.hot{
+
+.hot {
     width: 50px;
     height: 50px;
     background-color: #00CC65;
@@ -223,6 +256,7 @@ a:visited, a:link {
     margin: 0;
     box-shadow: 3px 3px black;
 }
+
 .table-wrap {
     max-width: 1100px;
     margin: 0 auto;
@@ -285,6 +319,7 @@ tbody td:last-child {
 tbody tr:nth-child(even) {
     background: #F5F5F5;
 }
+
 .box1 {
     width: 600px;
     margin: 0 auto 50px auto;
@@ -338,39 +373,47 @@ tbody tr:nth-child(even) {
     font-weight: bold;
     font-size: 22px;
 }
-#fainal-div{
+
+#fainal-div {
     margin-top: 100px;
 }
-#fainal-div hr , #hr-marqoee{
+
+#fainal-div hr, #hr-marqoee {
     margin: 0;
     border: none;
 }
-#fainal-div hr:nth-child(1){
-     background-color: #00CC65;
-     height: 6px;
 
- }
-#fainal-div hr:nth-child(2){
+#fainal-div hr:nth-child(1) {
+    background-color: #00CC65;
+    height: 6px;
+
+}
+
+#fainal-div hr:nth-child(2) {
     background-color: black;
     height: 7px;
     margin-bottom: 30px;
 }
-#fainal-div hr:nth-child(3){
+
+#fainal-div hr:nth-child(3) {
     background-color: #00CC65;
     height: 6px;
     margin: 0 auto;
     width: 90%;
     box-shadow: 4px 4px black;
 }
-#fainal-div h6{
+
+#fainal-div h6 {
     text-align: center;
     word-spacing: 5px;
     color: #3A3A3A;
 }
-#fainal-div h6 span{
+
+#fainal-div h6 span {
     color: #00CC65;
 }
-#fainal-div a:link , #fainal-div a:visited{
+
+#fainal-div a:link, #fainal-div a:visited {
     color: #00CC65;
     display: block;
     text-align: center;
