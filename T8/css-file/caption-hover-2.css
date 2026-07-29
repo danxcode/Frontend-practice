@@ -1,81 +1,63 @@
-* {
+*{
+    font-family: Calibri , Tahoma , sans-serif;
     box-sizing: border-box;
 }
-
-body {
-    margin: 0;
-    padding: 60px 20px;
-    background: #f4f4f4;
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-    text-align: center;
+#container{
+    width: 944px;
+    min-height: 200px;
+    margin: 0 auto;
+    padding: 10px;
 }
-
-.grid {
-    text-align: center;
-}
-
-.grid .card {
-    display: inline-block;
-    margin: 50px;
-    vertical-align: top;
-}
-
-.card {
-    width:400px;
-    height:300px;
-    position:relative;
-}
-
-.card__img {
+.item{
+    width: 400px;
+    height: 300px;
+    margin: 30px;
     position: relative;
-    z-index: 10;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
-    text-align: center;
-    font-size: 60px;
-    transition: transform .4s;
+    display: inline-block;
 }
-
-.card:hover .card__img {
-    transform: translateY(-90px);
-}
-
-.card__cap {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+.overlay{
     width: 100%;
-    height: 90px;
-    background: #2c3f52;
-    color: #fff;
-    text-align: left;
-    padding: 14px 20px;
-}
-
-.card__cap h3 {
-    margin: 0;
-    font-size: 16px;
-}
-
-.card__cap span {
-    color: #ed4e6e;
-    font-size: 12px;
-}
-
-.card__cap span:before {
-    content: "by ";
-}
-
-.card__cap a {
+    height: 24%;
+    background-color: rgba(43, 62, 85,1);
+    padding: 10px;
     position: absolute;
-    right: 20px;
-    top: 26px;
-    padding: 6px 14px;
-    background: #ed4e6e;
-    color: #fff;
+    bottom: 0;
+    left: 0;
+    transform: translatey(0);
+    color: white;
+    opacity: 0;
+}
+.item:hover .overlay{
+    transform: translateY(2px);
+    opacity: 1;
+}
+.item:hover{
+    overflow: visible;
+}
+.item:hover img{
+    transform: translateY(-70px);
+}
+.item img{
+    transition: all 0.5s;
+}
+
+.overlay h4 , .overlay h3{
+    margin: 0;
+    padding: 0;
+}
+.overlay a:link, .overlay a:visited{
+    display: block;
+    width: fit-content;
+    margin-left: 260px;
+    margin-top: -35px;
+    background-color: #ff5b6e;
+    color: white;
     text-decoration: none;
-    border-radius: 2px;
-    font-size: 12px;
+    padding: 12px 20px;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.overlay h4{
+    color: #ff5b6e;
 }

@@ -1,98 +1,63 @@
-* {
+*{
+    font-family: Calibri , Tahoma , sans-serif;
     box-sizing: border-box;
 }
-
-body {
-    margin: 0;
-    padding: 60px 20px;
-    background: #f4f4f4;
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-    text-align: center;
+#container{
+    width: 944px;
+    min-height: 200px;
+    margin: 0 auto;
+    padding: 10px;
 }
-
-.grid {
-    text-align: center;
-}
-
-.grid .card {
-    display: inline-block;
-    margin: 15px;
-    vertical-align: top;
-}
-
-.card {
+.item{
+    width: 400px;
+    height: 300px;
+    margin: 20px;
     position: relative;
-    width: 300px;
-    height: 220px;
-    transform-style: preserve-3d;
-}
-
-.card__imgwrap {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    display: inline-block;
     overflow: hidden;
 }
-
-.card__img {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    font-size: 60px;
-    transition: transform .4s;
-}
-
-.card:hover .card__img {
-    transform: translateX(25%);
-}
-
-.card__cap {
-    position: absolute;
-    top: 0;
-    left: 0;
+.overlay{
     width: 50%;
     height: 100%;
-    background: #2c3f52;
-    color: #fff;
-    text-align: left;
-    padding: 14px 16px;
-    opacity: 0;
-
-    transform-origin: 0 0;
-    transform: rotateY(-90deg);
-    transition: transform .4s, opacity .1s .3s;
-}
-
-.card:hover .card__cap {
-    opacity: 1;
-    transform: rotateY(0deg);
-    transition: transform .4s, opacity .1s;
-}
-
-.card__cap h3 {
-    margin: 0;
-    font-size: 15px;
-}
-
-.card__cap span {
-    color: #ed4e6e;
-    font-size: 11px;
-}
-
-.card__cap span:before {
-    content: "by ";
-}
-
-.card__cap a {
+    background-color: rgba(43, 62, 85,1);
+    padding: 10px;
     position: absolute;
-    bottom: 14px;
-    right: 12px;
-    padding: 5px 10px;
-    background: #ed4e6e;
-    color: #fff;
+    bottom: 0;
+    left: 0;
+    transform: translatex(0) rotateY(90deg);
+    transform-origin: left;
+    color: white;
+    transition: 0.5s;
+    opacity: 1;
+}
+.item:hover .overlay{
+    transform: translatex(0) rotatey(0deg);
+    transform-origin: left;
+}
+.item:hover img{
+    transform: translatex(100px);
+}
+.item img{
+    transition: all 0.5s;
+}
+
+.overlay h4 , .overlay h3{
+    margin: 10px;
+    padding: 0;
+}
+.overlay a:link, .overlay a:visited{
+    display: block;
+    width: fit-content;
+    margin-left: 70px;
+    margin-top: 176px;
+    background-color: #ff5b6e;
+    color: white;
     text-decoration: none;
-    border-radius: 2px;
-    font-size: 11px;
+    padding: 12px 20px;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.overlay h4{
+    color: #ff5b6e;
 }

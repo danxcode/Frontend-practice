@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    font-family: "Segoe UI", "Segoe UI Variable", Calibri, Arial, sans-serif;
+}
+body{
+    background-image: url("../images/bg-01.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#container{
+    width: 400px;
+    min-height: 635px;
+    margin: 130px auto;
+    border-radius: 8px;
+    background-color: white;
+}
+#container h1{
+    text-align: center;
+    color: black;
+    padding-top: 45px;
+}
+#container label{
+    display: block;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 9px;
+    color: #777777;
+}
+.form-style{
+    width: 300px;
+    height: 40px;
+    margin-left: 50px;
+    border: none;
+    border-bottom: 1px solid #bababa;
+    padding-left: 30px;
+    font-size: 10px;
+    display: block;
+}
+#container input[type="text"]{
+    background-image: url("../images/images_white_bg.png");
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: -15px center;
+}
+#container input[type="password"] {
+    background-image: url("../images/lock_bababa.png");
+    background-repeat: no-repeat;
+    background-size: 17px;
+    background-position: 7px center;
+}
+#forgot-pass{
+    text-decoration: none;
+    color: #777777;
+    font-size: 9px;
+    margin-left: 281px;
+}
+#container input[type="submit"]{
+    width: 300px;
+    height: 40px;
+    margin-left: 50px;
+    border: none;
+    color: white;
+    background: linear-gradient(to right, #64cedc 0%, #a084d6 50%, #e03df2 100%);
+    border-radius: 20px;
+    margin-top: 25px;
+    font-size: 20px;
+    display: block;
+}
+#container h6{
+    text-align: center;
+    color: #777777;
+}
+.a-style{
+    border-radius: 50%;
+    width: 8%;
+}
+#a-firs{
+    margin-left: 147px;
+}
+#last-h6{
+    margin-top: 110px;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+}
