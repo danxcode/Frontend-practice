@@ -22,7 +22,7 @@ body {
     margin-left: 7px;
 }
 
-#login, #image {
+#login, #image-wrapper {
     min-height: 100px;
     margin-top: 20px;
     display: inline-block;
@@ -34,7 +34,7 @@ body {
     min-height: 200px;
 }
 
-#image img {
+#image-wrapper img {
     height: 373px;
 }
 
@@ -45,7 +45,7 @@ body {
     font-size: 40px;
 }
 
-.form-style {
+.input {
     display: block;
     width: 350px;
     height: 35px;
@@ -61,7 +61,7 @@ body {
     background-position: 15px center;
 }
 
-.form-style:focus {
+.input:focus {
     border: none;
     background-image: url("../images/dot-filled.jpg");
 }

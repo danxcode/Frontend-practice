@@ -54,6 +54,7 @@ body{
     text-align: center;
     color: black;
     background-color: #f2ceb9;
+    cursor: pointer;
 }
 #container label[for="remember-me"]{
     margin-left: 4px;
@@ -66,7 +67,7 @@ input[type="checkbox"]{
     margin-left: 215px;
     accent-color: #f2ceb9;
 }
-#a-forgot {
+#forgot-btn {
     color: #f2ceb9;
     text-decoration: none;
     margin-left: 68px;

@@ -1,27 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <title>form-1</title>
     <link href="./css-file/form-1.css" rel="stylesheet">
 </head>
-<body dir="rtl">
+<body>
 <div id="container">
     <div id="login">
         <h1>ثبت نام</h1>
         <form action="#" method="POST">
             <div id="parent">
-                <input class="form-style" name="username" placeholder="نام" required type="text">
-                <input class="form-style" name="email" placeholder="ایمیل" required type="email">
-                <input class="form-style" name="password" placeholder="کلمه عبور" required type="password">
-                <h5><a href="#"><span>قبول کردن تمام </span>قوانین سایت</a></h5>
-                <h5 id="h5-inline-block"><a href="#"><span>قبلا ثبت نام کرده اید ؟ </span> ورود</a></h5>
-                <input name="submit" type="submit" value="ثیت نام">
+                <input
+                        type="text"
+                        class="input"
+                        name="username"
+                        placeholder="نام"
+                        required
+                >
+                <input
+                        type="email"
+                        class="input"
+                        name="email"
+                        placeholder="ایمیل"
+                        required
+                >
+                <input
+                        type="password"
+                        class="input"
+                        name="password"
+                        placeholder="کلمه عبور"
+                        required
+                >
+                <h5>
+                    <span>قبول کردن تمام </span>
+                    <a href="#">
+                        قوانین سایت
+                    </a>
+                </h5>
+                <h5 id="h5-inline-block">
+                    <span>قبلا ثبت نام کرده اید ؟ </span>
+                    <a href="#">
+                        ورود
+                    </a>
+                </h5>
+                <input
+                        name="submit"
+                        type="submit"
+                        value="ثیت نام"
+                >
             </div>
         </form>
     </div>
-    <div id="image">
-        <img alt="" src="./images/registration-form.jpg">
+    <div id="image-wrapper">
+        <img
+                alt=""
+                src="./images/registration-form.jpg">
     </div>
 </div>
 </body>
