@@ -1,28 +1,122 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
 
-    const toggles = document.querySelectorAll('.dropdown-toggle');
+    const toggles = document.querySelectorAll(".dropdown-toggle");
 
-    toggles.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const dropdown = btn.parentElement;
-            const isOpen = dropdown.classList.contains('open');
+    toggles.forEach(button => {
 
-            // برای ری‌استارت شدن انیمیشن ورود آیتم‌ها هر بار که باز می‌شود
+        button.setAttribute("aria-expanded", "false");
+
+        button.addEventListener("click", function (event) {
+
+            event.stopPropagation();
+
+            const dropdown = this.parentElement;
+            const isOpen = dropdown.classList.contains("open");
+
+            // بستن دراپ‌داون‌های هم‌سطح
+            const siblings = dropdown.parentElement.children;
+
+            [...siblings].forEach(item => {
+
+                if (item !== dropdown.parentElement) {
+
+                    const childDropdown = item.querySelector(":scope > .dropdown");
+
+                    if (childDropdown) {
+
+                        childDropdown.classList.remove("open");
+
+                        const btn = childDropdown.querySelector(":scope > .dropdown-toggle");
+
+                        if (btn) {
+                            btn.setAttribute("aria-expanded", "false");
+                        }
+
+                    }
+
+                }
+
+            });
+
+            // ری‌استارت انیمیشن آیتم‌ها
             if (!isOpen) {
+
                 const items = dropdown.querySelectorAll(
-                    ':scope > .dropdown-content > .dropdown-inner > ul > li'
+                    ":scope > .dropdown-content > .dropdown-inner > ul > li"
                 );
-                items.forEach(li => {
-                    li.style.animation = 'none';
-                    // فورس ری‌فلو تا انیمیشن دوباره اجرا بشه
-                    void li.offsetWidth;
-                    li.style.animation = '';
+
+                items.forEach(item => {
+
+                    item.style.animation = "none";
+
+                    void item.offsetWidth;
+
+                    item.style.animation = "";
+
                 });
+
             }
 
-            dropdown.classList.toggle('open');
-            btn.setAttribute('aria-expanded', String(!isOpen));
+            dropdown.classList.toggle("open");
+
+            this.setAttribute(
+                "aria-expanded",
+                String(!isOpen)
+            );
+
         });
+
+    });
+
+    // جلوگیری از بسته شدن والد هنگام کلیک داخل زیرمنو
+    document.querySelectorAll(".dropdown-content").forEach(content => {
+
+        content.addEventListener("click", e => {
+
+            e.stopPropagation();
+
+        });
+
+    });
+
+    // بستن همه Dropdownها با کلیک بیرون
+    document.addEventListener("click", () => {
+
+        document.querySelectorAll(".dropdown.open").forEach(dropdown => {
+
+            dropdown.classList.remove("open");
+
+            const button = dropdown.querySelector(":scope > .dropdown-toggle");
+
+            if (button) {
+
+                button.setAttribute("aria-expanded", "false");
+
+            }
+
+        });
+
+    });
+
+    // بستن با کلید Escape
+    document.addEventListener("keydown", e => {
+
+        if (e.key !== "Escape") return;
+
+        document.querySelectorAll(".dropdown.open").forEach(dropdown => {
+
+            dropdown.classList.remove("open");
+
+            const button = dropdown.querySelector(":scope > .dropdown-toggle");
+
+            if (button) {
+
+                button.setAttribute("aria-expanded", "false");
+
+            }
+
+        });
+
     });
 
 });
