@@ -1,0 +1,60 @@
+@keyframes heartbeat {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    25% {
+        transform: translate(-50%, -50%) scale(1.3);
+    }
+    40% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    60% {
+        transform: translate(-50%, -50%) scale(1.3);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #ddaa81;
+    margin: 0;
+    height: 100vh;
+    position: relative;
+}
+#loading{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: heartbeat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.square{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: rotate(45deg);
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 30px;
+}
+.circle-left{
+    left: 30px;
+}
+.circle-right{
+    left: 70px;
+}

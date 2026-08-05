@@ -1,0 +1,30 @@
+@keyframes roteat {
+    from {
+        transform: translate(-50%, -50%) rotateY(0deg);
+    }
+    to{
+        transform: translate(-50%, -50%) rotateY(180deg);
+    }
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #ddaa81;
+    margin: 0;
+    position: relative;
+    height: 100vh;
+}
+#loading{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: roteat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+}

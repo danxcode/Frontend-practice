@@ -1,0 +1,56 @@
+@keyframes scale {
+    0% {
+        transform: scaleY(1);
+    }
+    13% {
+        transform: scaleY(1.7);
+    }
+    26% {
+        transform: scaleY(1);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #ddaa81;
+    margin: 0;
+    height: 100vh;
+    position: relative;
+}
+#loading{
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.loading-into{
+    background-color: white;
+    width: 50px;
+    height: 100px;
+    animation-name: scale;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+.into-1{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+.into-2{
+    position: absolute;
+    top: 25px;
+    left: 100px;
+    animation-delay: 0.1s;
+}
+.into-3{
+    position: absolute;
+    top: 25px;
+    left: 170px;
+    animation-delay: 0.2s;
+}

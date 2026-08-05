@@ -1,0 +1,51 @@
+@keyframes pulse{
+    0%, 60%, 100%{
+        transform: scale(1);
+    }
+    30%{
+        transform: scale(1.7);
+    }
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #ddaa81;
+    margin: 0;
+    height: 100vh;
+    position: relative;
+}
+#loading{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.dot{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    margin-top: -9px;
+    animation-name: pulse;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.dot1{
+    left: 35px;
+    animation-delay: 0s;
+}
+.dot2{
+    left: 75px;
+    margin-left: -9px;
+    animation-delay: 0.2s;
+}
+.dot3{
+    right: 35px;
+    animation-delay: 0.4s;
+}

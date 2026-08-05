@@ -1,0 +1,52 @@
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ddaa81;
+    margin: 0;
+    height: 100vh;
+    position: relative;
+}
+
+#loading{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: spin;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.961, 0.125, 0.113, 0.881);
+}
+
+.petal{
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    position: absolute;
+}
+
+.petal-top{
+    top: 0;
+    left: 0;
+    border-radius: 100% 0 0 0;
+}
+
+.petal-bottom{
+    bottom: 0;
+    right: 0;
+    border-radius: 0 0 100% 0;
+}
