@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+#base-flex{
+    width: 95%;
+    height: 550px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.group-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+.Holy.Grail.Layout{
+    height: 80px;
+    background: #086cf2;
+}
+
+
+.middle{
+    flex: 1;
+    display: flex;
+    gap: 10px;
+}
+
+
+.nav{
+    width: 170px;
+    background: #65a0f5;
+}
+
+
+.Main.Content{
+    flex: 1;
+    background: #a7a8ad;
+}
+
+
+.Sidebar{
+    width: 170px;
+    background: #65a0f5;
+}
+
+
+.footer{
+    height: 80px;
+    background: #086cf2;
+}

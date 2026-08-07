@@ -2,64 +2,62 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    background-color: #e5f0ff;
+    font-family: Arial, sans-serif;
 }
 
 #base-grid {
-    width: 95%;
-    height: 550px;
-    margin: 20px auto;
+
     display: grid;
-    grid-template-columns: 170px 1fr 170px;
-    grid-template-rows: 85px 1fr 85px;
+    grid-template-columns:170px 1fr 170px;
+    grid-template-rows:80px 1fr 80px;
+    grid-template-areas:
+
+        "header header header"
+        "nav main sidebar"
+        "footer footer footer";
+
+    height: 550px;
     gap: 10px;
+    padding: 10px;
+
 }
 
 .group-grid {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Arial, sans-serif;
     font-size: 26px;
-
     color: white;
     border-radius: 5px;
 }
 
 .HolyGrailLayout {
-    background-color: #086cf2;
-    grid-column: 1 / 4;
-    grid-row: 1;
-    font-weight: bold;
+    grid-area: header;
+    background: #086cf2;
 }
 
 
 .nav {
-    background-color: #65a0f5;
-    grid-column: 1;
-    grid-row: 2;
+    grid-area: nav;
+    background: #65a0f5;
 }
 
 
 .MainContent {
-    background-color: #a7a8ad;
-    grid-column: 2;
-    grid-row: 2;
+    grid-area: main;
+    background: #aaa;
 }
 
 
 .Sidebar {
-    background-color: #65a0f5;
-    grid-column: 3;
-    grid-row: 2;
+    grid-area: sidebar;
+    background: #65a0f5;
 }
 
 
 .footer {
-    background-color: #086cf2;
-    grid-column: 1 / 4;
-    grid-row: 3;
+    grid-area: footer;
+    background: #086cf2;
+}
+
 }
